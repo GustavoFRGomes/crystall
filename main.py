@@ -1,8 +1,5 @@
 import argparse
-
-from messenger.teams.user_mention_messenger import MentionConnectorCard, UserMention
-from resolver.name_resolver import GitTeamsNameResolver
-from utils.args_validator import validate_args
+import urllib3
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-w', '--webhook', required=True, help='Webhook URL for the Teams Channel')
